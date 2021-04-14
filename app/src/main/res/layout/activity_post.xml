@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PostActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F4F4">
+
+
+        <RelativeLayout
+            android:id="@+id/upper_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:background="#305F95">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post Detail"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/currentPostRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_bg"
+            android:elevation="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/upper_rl"
+            android:layout_marginHorizontal="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/profile_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/user"/>
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:layout_toRightOf="@id/profile_img"
+                android:layout_marginStart="5dp"
+                android:layout_alignTop="@id/profile_img"
+                android:layout_alignBottom="@id/profile_img"
+                android:gravity="center"
+                android:fontFamily="@font/calibri_bold"
+                android:textSize="13sp"/>
+            <ImageView
+                android:id="@+id/clock_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/UserName"
+                android:layout_alignBottom="@id/UserName"
+                android:layout_toRightOf="@id/UserName"/>
+            <TextView
+                android:id="@+id/Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answered 4 minutes ago"
+                android:layout_toRightOf="@id/clock_iv"
+                android:layout_marginStart="5dp"
+                android:layout_alignTop="@id/profile_img"
+                android:layout_alignBottom="@id/profile_img"
+                android:gravity="center"
+                android:fontFamily="@font/calibri_regular"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:id="@+id/Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer"
+                android:textColor="#305F95"
+                android:textSize="18sp"
+                android:layout_alignStart="@id/profile_img"
+                android:layout_below="@id/profile_img"
+                android:fontFamily="@font/calibri_bold"
+                android:layout_marginTop="5dp"/>
+            <ImageView
+                android:id="@+id/Image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/Answer"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"/>
+            <VideoView
+                android:id="@+id/Video"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/Answer"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vote_bg"
+                android:paddingVertical="15dp"
+                android:layout_below="@id/Image"
+                android:layout_marginTop="20dp"
+                android:id="@+id/vote_rl">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/vote_ll">
+
+
+                    <ImageButton
+                        android:id="@+id/LikeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/like"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:id="@+id/UpvotesTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upvotes"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/calibri_regular"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#818181"
+                        android:layout_marginStart="15dp"/>
+                    <ImageButton
+                        android:id="@+id/ReplyBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/reply"
+                        android:layout_marginStart="20dp"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:id="@+id/ReplyTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reply"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/calibri_regular"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#818181"
+                        android:layout_marginStart="15dp"/>
+                    <ImageButton
+                        android:id="@+id/ReportBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/spam"
+                        android:layout_marginStart="20dp"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:id="@+id/ReportTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Report"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/calibri_regular"
+                        android:textSize="12sp"
+                        android:layout_marginTop="3dp"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/noOfAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/currentPostRL"
+            android:text="Answers"
+            android:fontFamily="@font/calibri_regular"
+            android:textSize="16sp"
+            android:layout_below="@id/currentPostRL"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+
+        <ListView
+            android:id="@+id/posts_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noOfAns"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="5dp"
+            android:dividerHeight="20dp"
+            android:divider="@android:color/transparent"
+            >
+
+        </ListView>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

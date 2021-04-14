@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/profession_act_bg">
+
+        <TextView
+            android:id="@+id/register_tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/calibri_regular"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:id="@+id/register_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_tv_login"
+            android:paddingHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/full_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your name"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/calibri_bold"/>
+            <EditText
+                android:id="@+id/FulName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="John Snow"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/edittext_bg"
+                android:fontFamily="@font/calibri_regular"/>
+            <TextView
+                android:id="@+id/email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/calibri_bold"/>
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="johsnow@gmail.com"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_bg"
+                android:fontFamily="@font/calibri_regular"/>
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/calibri_bold"/>
+            <EditText
+                android:id="@+id/Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="John_snow"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:fontFamily="@font/calibri_regular"/>
+            <TextView
+                android:id="@+id/password_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/calibri_bold"/>
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="John123#"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_bg"
+                android:fontFamily="@font/calibri_regular"/>
+
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_layout"
+            android:layout_marginTop="30dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:background="@drawable/button_bg"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/calibri_bold"
+            android:textSize="20sp"
+            android:paddingHorizontal="80dp"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

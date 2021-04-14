@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F4F4"
+    tools:context=".Activities.AnswerActivity">
+
+    <RelativeLayout
+        android:id="@+id/upper_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:layout_alignParentTop="true"
+        android:background="#305F95">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Answer"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/attachPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/upper_rl"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/button_bg"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/calibri_bold"
+        android:layout_alignTop="@id/attachPhoto"
+        android:layout_alignBottom="@id/attachPhoto"/>
+    <View
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#818181"
+        android:layout_below="@id/attachPhoto"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"/>
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/calibri_bold"
+        android:layout_below="@id/div"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"/>
+    <View
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#818181"
+        android:layout_below="@id/Question"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <EditText
+        android:id="@+id/Answer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/div1"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:hint="Type here..."
+        android:textColor="#000000"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/calibri_regular"
+        android:textSize="15sp"
+        android:gravity="left"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="20dp"
+        android:textColorHint="#818181"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

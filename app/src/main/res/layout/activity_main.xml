@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F4F4">
+
+
+        <RelativeLayout
+            android:id="@+id/upper_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:background="#305F95">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discussion Wall"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/new_post_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:layout_below="@id/upper_rl"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:elevation="3dp"
+            android:background="@drawable/post_bg">
+
+            <RelativeLayout
+                android:id="@+id/post_ques_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/new_post_bg"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/prof_img"
+                android:padding="5dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/post_a_question_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:text="Post a Question"/>
+                <TextView
+                    android:id="@+id/upload_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_alignStart="@id/post_a_question_tv"
+                    android:layout_below="@id/post_a_question_tv"
+                    android:text="Upload a Doc/Video"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/PostBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/post_ques_rl"
+                android:layout_alignEnd="@id/post_ques_rl"
+                android:layout_alignTop="@id/post_ques_rl"
+                android:layout_alignBottom="@id/post_ques_rl"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:id="@+id/prof_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/user"
+                android:layout_alignTop="@id/post_ques_rl"
+                android:layout_alignBottom="@id/post_ques_rl"
+                android:layout_marginEnd="15dp"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:id="@+id/posts_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_post_rl"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:dividerHeight="20dp"
+            android:divider="@android:color/transparent"
+            >
+
+        </ListView>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

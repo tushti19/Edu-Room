@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProfessionActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30dp"
+        android:background="@drawable/profession_act_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+            android:text="Edu-Room"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/heading_app"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <ImageButton
+            android:id="@+id/teacher_login"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/teacher"/>
+        <ImageButton
+            android:id="@+id/student_login"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/student"/>
+        <TextView
+            android:id="@+id/register_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/teacher_login"
+            android:text="Continue as"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/calibri_regular"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+        <TextView
+            android:id="@+id/student_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_login"
+            android:layout_alignStart="@id/student_login"
+            android:layout_alignEnd="@id/student_login"
+            android:text="Student"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/calibri_regular"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/teacher_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teacher_login"
+            android:layout_alignStart="@id/teacher_login"
+            android:layout_alignEnd="@id/teacher_login"
+            android:text="Teacher"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/calibri_regular"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
